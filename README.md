@@ -14,7 +14,7 @@ Dễ thấy với cơ chế 1, khó lòng một user có thể tìm thấy đư�
 Cơ chế 2 thì phổ biến hơn vì nó dựa vào URL, từ đó bóc tách ra thông tin cần thiết để hiển thị nội dung ra cho người dùng
 
 ## window.location
-![url-partition.png](./img/url-partition.png)
+![url-partition.png](./img/url-partition_update.png)
 
 **window.location** giúp bóc tách URL ra thành các thành phần trên. Trên đây, ta chỉ quan tâm đến **pathname**, **search** và **key**
 
@@ -38,7 +38,7 @@ Thực chất **document** là một **object**, **object** này mô tả DOM c�
 
 Hình bên dưới mô tả cơ chế request của browser tới server để lấy **document tương ứng với entry hiện tại**
 
-![req_res_document_entry.png](./img/req_res_document_entry.png)
+![req_res_document_entry.png](./img/req_res_document_entry_update.png)
 
 ## Cơ Chế Navigation Của Browser
 
