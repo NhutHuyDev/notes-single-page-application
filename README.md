@@ -1,8 +1,8 @@
 ## Giới thiệu
-Ghi chú ngắn gọn về SPA từ gom nhặt từ internet
+Ghi chú ngắn gọn về SPA gom nhặt từ internet :)
 
 ## SPA - Single-Page Application
-Toàn bộ ứng dụng web chỉ có một trang duy nhất, đây là trang **root**, các trang web hay thành phần khác sẽ được render lên trên trang **root** này. Về cơ bản, SPA được xây dựng dựa trên công cụ và cơ chế có sẳn trên trình duyệt
+Toàn bộ ứng dụng web chỉ có một trang duy nhất, đây là trang **root**, các trang web hay thành phần khác sẽ được render lên trên trang **root** này. Về cơ bản, SPA được xây dựng dựa trên công cụ và cơ chế có sẳn trên trình duyệt.
 
 ## Phân Loại SPA Theo Cơ Chế Điều Hướng
 Điều hướng là điều mà website nào cũng phải có, có 2 cơ chế chính để điều hướng với một SPA:
@@ -11,7 +11,7 @@ Toàn bộ ứng dụng web chỉ có một trang duy nhất, đây là trang **
 
 Dễ thấy với cơ chế 1, khó lòng một user có thể tìm thấy được một nội dung dễ dàng, họ buộc phải truy cập từng bước thì mới có thể xem được.
 
-Cơ chế 2 thì phổ biến hơn vì nó dựa vào URL, từ đó bóc tách ra thông tin cần thiết để hiển thị nội dung ra cho người dùng
+Cơ chế 2 thì phổ biến hơn vì nó dựa vào URL, từ đó bóc tách ra thông tin cần thiết để hiển thị nội dung ra cho người dùng.
 
 ## window.location
 ![url-partition.png](./img/url-partition_update.png)
@@ -65,7 +65,7 @@ Khi navigate tới đúng link hiện tại, entry hiện tại sẽ bị thay t
 ![navigation_case_4.webp](./img/navigation_case_4.webp)
 
 ## Cơ Chế Navigation Trong Một SPA
-Hiện nay, các SPA sử dụng một bộ các API (đại khái là các hàm) được cung cấp sẳn là **window.history**. Ở đây ta chỉ quan tâm ba hàm chính: **pushState()**, **replaceState()** và **go()**
+Hiện nay, các SPA sử dụng một bộ các API (đại khái là một bộ các hàm) được cung cấp sẳn là **window.history**. Ở đây ta chỉ quan tâm ba hàm chính: **pushState()**, **replaceState()** và **go()**
 
 Hình phía dưới mô tả đơn giản về hàm **pushState()**
 ![pushState.webp](./img/pushState.webp)
@@ -74,7 +74,7 @@ Hình phía dưới mô tả đơn giản về hàm **pushState()**
 Cơ bản thì **pushState()** sẽ thêm một entry vào session history phía sau entry hiện tại. Cơ chế này cũng giống như cơ chế navigation của browser khi ta click vào một link như đã nói ở trên.
 
 **pushState()** có 3 tham số theo thứ tự lần lượt:
-- **state**: thường là null, ta sẽ bàn về nó ở phần sau
+- **state**: thường là null, ta sẽ nói về nó ở phần sau
 - **title**: không mấy quan trọng, thường là ""
 - **path**: địa chỉ mà ta muốn navigate tới. Đây có thể là một URL đầy đủ, hoặc là một relative path. **Phải thuộc cùng chung protocol và hostname với entry hiện tại**
 ![pushState2.webp](./img/pushState2.webp)
@@ -100,8 +100,6 @@ go(-10); // back lại 10 trang
 go(0); // reload
 go(); // reload
  
-
-
 ## State là gì?
 Không phải state kiểu trong react nhá :)
 
@@ -115,9 +113,9 @@ Dùng **history.state** để truy cập state của entry hiện tại
   // thông báo cho router biết việc navigate được thực hiện
 }, false);
 
-- Hiện nay hầu hết các SPA framework (React, Vue) đều tự xây dựng nên những bộ wrapper riêng của mình cho History API
+- Hiện nay hầu hết các SPA framework (React, Vue) đều tự xây dựng nên những package riêng của mình cho History API
 
-- Tham khảo https://developer.mozilla.org/en-US/ để biết thêm chi tiết về các History API
+- Tham khảo https://developer.mozilla.org/en-US/ để biết thêm chi tiết về các **History API**
 
 ## Tài liệu tham khảo
 - https://blog.pshrmn.com/how-single-page-applications-work/
